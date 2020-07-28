@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./vendor/bootstrap-5/css/bootstrap.css" />
+        <link rel="stylesheet" href="./vendor/css/style.css" />
+
+        <title>Chat-page-Arabic</title>
+
+    </head>
+    <body>
+
+       <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo img-fluid" src="./vendor/images/2019623195756.png" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                                </svg>
+                                تصفح المشاريع <span class="sr-only">(current)</span>
+                            </a>
+                            <a class="nav-item nav-link" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stopwatch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
+                                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5a.5.5 0 0 1 .5-.5zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M7 1h2v2H7V1z"/>
+                                </svg>
+                                البحث عن مستقل
+                            </a>
+                        </div>
+                    
+                        <div class="navbar-lang">
+                            <div class="bell">
+                                <a class="nav-item nav-link" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                                    <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                    </svg>
+                                </a>
+                                <span><div class="num1">34</div></span>
+                            </div>
+                        
+    
+                            <div class="message">
+                                <a class="nav-item nav-link" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </a>
+                                <span><div class="num2">2</div></span>    
+                            </div>
+    
+    
+                            <a class="nav-item nav-link" href="#">
+                                <span>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.018 7.5h2.49c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM2.255 4H4.09a9.266 9.266 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.024 7.024 0 0 0 2.255 4zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.173.324-.33.682-.468 1.068H7.5V1.077zM7.5 5H4.847a12.5 12.5 0 0 0-.338 2.5H7.5V5zm1 2.5V5h2.653c.187.765.306 1.608.338 2.5H8.5zm-1 1H4.51a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm1 2.5V8.5h2.99a12.495 12.495 0 0 1-.337 2.5H8.5zm-1 1H5.145c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm-2.173 2.472a6.695 6.695 0 0 1-.597-.933A9.267 9.267 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM1.674 11H3.82a13.651 13.651 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm8.999 3.472A7.024 7.024 0 0 0 13.745 12h-1.834a9.278 9.278 0 0 1-.641 1.539 6.688 6.688 0 0 1-.597.933zM10.855 12H8.5v2.923c.67-.204 1.335-.82 1.887-1.855A7.98 7.98 0 0 0 10.855 12zm1.325-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm.312-3.5h2.49a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.91 4a9.277 9.277 0 0 0-.64-1.539 6.692 6.692 0 0 0-.597-.933A7.024 7.024 0 0 1 13.745 4h-1.834zm-1.055 0H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+                                    </svg> English
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <div class="profile">
+                            <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                            <p>mohamedHammam</p>
+                        </div>
+
+                    </div>    
+                </div>
+            </nav>
+       </header>
+
+       <section>
+            <div class="container-fluid">
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <span>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L3.207 8l2.647-2.646a.5.5 0 0 0 0-.708z"/>
+                                <path fill-rule="evenodd" d="M10 8a.5.5 0 0 0-.5-.5H3a.5.5 0 0 0 0 1h6.5A.5.5 0 0 0 10 8zm2.5 6a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 1 0v11a.5.5 0 0 1-.5.5z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                    <div class="profile-img">
+                        <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                    </div>
+
+                    <div class="search">
+                        <input class="form-control" type="search" placeholder="بحث" />
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                        </svg>
+                    </div>
+
+                    <div class="friends">
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="online"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>mohamedHammam</h5>
+                                <p>hey</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>11:26pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row selected">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="online"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>hosamSayed</h5>
+                                <p>lets start our project</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>7:48pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>ahmedMostafa</h5>
+                                <p>javascript</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>omarMohamed</h5>
+                                <p>sass</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>25/7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>mohamedIbrahim</h5>
+                                <p>ok</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>25/7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>mohamedHammam</h5>
+                                <p>javascript</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>23/7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>mohamedHammam</h5>
+                                <p>javascript</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>23/7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cl-3">
+                                <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                                <div class="offline"></div>
+                            </div>
+                            <div class="cl-7">
+                                <h5>mohamedHammam</h5>
+                                <p>javascript</p>
+                            </div>
+                            <div class="cl-2">
+                                <div class="date">
+                                    <span>22/7</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="head-right">
+                    <div class="row user-img">
+                        <div class="col-sm-1">
+                            <img class="img-fluid" src="./vendor/images/default-profile-1.png" />
+                        </div>
+                        <div class="col-sm-11">
+                            <h5>Hosam sayed</h5>
+                            <p>online</p>
+                        </div>
+                    </div>
+                    <div class="message-area">
+                        <div class="send">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing aspernatarchitecto
+                                dignissimos, voluptates, at maiores sapiente natus dolorum, quaerat 
+                                deserunt. Veritatis, delectus.
+                            </p>
+                            <div class="date">
+                                <span>7:48pm</span>
+                            </div>
+                        </div>
+                        <div class="recive">
+                            <p>hi mohamed</p>
+                            <div class="date">
+                                <span>8:30pm</span>
+                            </div>
+                        </div>
+
+                        <div class="recive">
+                            <p>hi ahmed</p>
+                            <p>how are you</p>
+                            <div class="date">
+                                <span>8:32pm</span>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing aspernatarchitecto
+                                dignissimos, voluptates, at maiores sapiente natus dolorum, quaerat 
+                                deserunt. Veritatis, delectus.
+                            </p>
+                            <div class="date">
+                                <span>8:33pm</span>
+                            </div>
+                        </div>
+
+                        <div class="recive">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing aspernatarchitecto
+                                dignissimos, voluptates, at maiores sapiente natus dolorum, quaerat 
+                                deserunt. Veritatis, delectus.
+                            </p>
+                            <div class="date">
+                                <span>8:34pm</span>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <p>lets start our project</p>
+                            <div class="date">
+                                <span>8:35pm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <button class="btn" >إرسال</button>
+                        <input class="form-control" type="text" placeholder="رسالتك ...." />
+                    </div>
+                </div>
+            </div>
+       </section>
+        
+        <script src="./vendor/bootstrap-5/js/bootstrap.js"></script>
+        <script src="./vendor/js/js.js"></script>
+    </body>
+</html>
